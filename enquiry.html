@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact V6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/minimize-css/bootstrap.minimize.css">
+    <link rel="stylesheet" href="assets/minimize-css/style-minimize.css">
+</head>
+
+<body id="body">
+    <div id="preloader" class="loader-hidden">
+        <div class="preloader-wrapper">
+            <div class="la-ball-clip-rotate-pulse la-2x">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END prelaoder -->
+
+    <div id="showmessage" class="message-loaded message">
+        <p id="formsubmitted"></p>
+    </div>
+
+    <div class="container-contact100">
+        <div class="wrap-contact100" style="display: block">
+            <a href="./index.html" class="contact100-btn-hide">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </a>
+
+            <form id="enquiryform" class="contact100-form validate-form enquiryform" action="#">
+                <span class="contact100-form-title">
+                    Contact Us
+                </span>
+
+                <div class="form-group wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                    <span class="label-input100">Your Name</span>
+                    <input class="input100" type="text" name="name" value="" title="Please Provide Your Name"
+                        placeholder="Enter your name" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="form-group wrap-input100 rs1-wrap-input100 validate-input"
+                    data-validate="Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Email</span>
+                    <input id="enquiry-email" class="input100" type="email" name="email" value=""
+                        title="Please Provide Email Id" placeholder="Enter your email addess" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="form-group wrap-input100 rs1-wrap-input100 validate-input"
+                    data-validate="Mobile Number is required">
+                    <span class="label-input100">Mobile Number</span>
+                    <input id="enq-moblnumber" class="input100" type="tel" minlength="10" maxlength="10" name="mobile"
+                        title="Please Provide Mobile Number" placeholder="Enter your Mobile Number" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="mbl-padding form-group wrap-input100 rs1-wrap-input100 validate-input"
+                    data-validate="Mobile Number is required">
+                    <span class="mbl-line-height label-input100">Professional Services</span>
+                    <select id="professionalservices" type="input" value="" class="select-ready-to-invest"
+                        onchange="renderServiceDropDowns(event);" required>
+                        <option name="select" value="---Select---">---Select---</option>
+                        <option name="service" value="I want to buy agricultural land / I want to invest">I want to buy
+                            agricultural land / I want to invest</option>
+                        <option name="product" value="I have my own agricultural land / I own farmland">I have my own
+                            agricultural land / I own farmland</option>
+                    </select>
+                    <span class="focus-input100"></span>
+                </div>
+
+
+                <div id="service-dropdown-one"
+                    class="mbl-padding form-group wrap-input100 rs1-wrap-input100 validate-input in-visible">
+
+                </div>
+
+                <div id="service-dropdown-two" style="margin-top: -27px;"
+                    class="form-group wrap-input100 rs1-wrap-input100 validate-input in-visible">
+
+                </div>
+
+                <div id="location" class="form-group wrap-input100 rs1-wrap-input100 validate-input in-visible"
+                    data-validate="Where is your agricultural land located? is required">
+
+                </div>
+
+                <div id="landinacres" class="form-group wrap-input100 rs1-wrap-input100 validate-input in-visible"
+                    data-validate="How many acres of agricultural land do you own">
+
+                </div>
+
+                <div id="comments" class="form-group wrap-input100 rs1-wrap-input100 validate-input in-visible">
+
+                </div>
+                <div class="form-group container-contact100-form-btn">
+                    <button type="button" name="submit" class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+
+           <!-- <p class="contact100-more">
+                For any question on service contact our customer service center: <span
+                    class="contact100-more-highlight">9606224400</span>
+            </p> -->
+            <p class="contact100-more">
+                For any question on projects contact our customer service center: <span
+                    class="contact100-more-highlight"><i class="icon icon-phone3"> </i><a href="tel:+91 9110223393" class="c-white"> +91 9110223393</a></span>
+            </p>
+        </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '627096091041958');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=627096091041958&ev=PageView&noscript=1" /></noscript>
+    <!-- <script src="//code.tidio.co/rw0jpkfdc1glbdqaxk4c9dk86ayjeiem.js"></script> -->
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=install_email page_id="991303137738923" theme_color="#0084ff"
+        logged_in_greeting="Hey, how can we help you?" logged_out_greeting="Hey, how can we help you?">
+    </div>
+    <!-- Load Facebook SDK for JavaScript End -->
+
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/minimize-css/fontawesome-minimize.css">
+    <link rel="stylesheet" href="assets/minimize-css/xsIcon-minimize.css">
+    <link rel="stylesheet" href="assets/css/iconmoon.css">
+    <link rel="stylesheet" href="assets/css/isotope.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/minimize-css/owl.theme.default.minimize.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/minimize-css/animate-minimize.css">
+    <link rel="stylesheet" href="assets/css/articles.css">
+    <link rel="stylesheet" href="assets/minimize-css/open-sans-600-minimize.css">
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/minimize-css/responsive-minimize.css" />
+
+    <script src="assets/minimize-js/jquery-3.2.1.minimize.js"></script>
+    <script src="assets/minimize-js/bootstrap.minimize.js"></script>
+    <script src="assets/minimize-js/jquery-mixtub-minimize.js"></script>
+    <script src="assets/minimize-js/jquery.magnific-popup.minimize.js"></script>
+    <script src="assets/minimize-js/owl.carousel.minimize.js"></script>
+    <script src="assets/minimize-js/navigation-minimize.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/minimize-js/isotope.minimize.js"></script>
+    <script src="assets/minimize-js/wow.minimize.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/httprequest.js"></script> -->
+    <script src="assets/minimize-js/httprequest.minimize.js"></script>
+    <script src="assets/custom-minify-js/enquiry-min.js"></script>
+
+    <script src="assets/js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/vendor/animsition/js/animsition.min.js"></script>
+    <script src="assets/js/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/js/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/select2/select2.min.js"></script>
+    <script src="assets/js/vendor/daterangepicker/moment.min.js"></script>
+    <script src="assets/js/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="assets/js/vendor/countdowntime/countdowntime.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176412503-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176412503-1');
+    </script>
+
+
+</body>
+
+</html>
