@@ -1,0 +1,66 @@
+.xs-banner-sec.banner-slider .owl-nav>div {
+    background: rgb(0 0 0 / 60%) !important;
+}
+
+.xs-banner-sec.banner-slider .owl-nav>div i {
+    font-weight: bold !important;
+}
+
+.owl-item.active .backgroundVideo {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1;
+}
+
+.owl-item .backgroundVideo {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+/* Scroll to top button styles */
+#scrollUp {
+    display: none !important;
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #28a745 !important;
+    color: white !important;
+    border-radius: 50% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    transition: all 0.3s ease !important;
+    z-index: 1000 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+#scrollUp:hover {
+    background-color: #218838 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.4) !important;
+}
+
+#scrollUp i {
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    #scrollUp {
+        bottom: 15px !important;
+        right: 15px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    #scrollUp i {
+        font-size: 18px !important;
+    }
+}

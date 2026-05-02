@@ -1,0 +1,1018 @@
+/* 4-1-2024 By Preeti */
+/* .telephone:hover *{
+    color: #07d307 !important;
+} */
+.c-white{
+    color: #fff !important;
+    padding: 1px 15px 1px 1px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.lbl-phone{
+    cursor: pointer !important;
+}
+/* .lbl-phone:hover *{
+    color: #07d307 !important;
+} */
+
+.padding-lr-10{
+    padding: 0px 10px;
+}
+/* 8-7-2025 by preeti*/
+.dropdown-content.drop-down-width.dropdown-content-mbl {
+    width: 180px !important; /* Adjust the value as needed */
+    min-width: unset !important; /* Optional: remove any min-width if set */
+    max-width: 100vw; /* Optional: prevent overflow on mobile */
+}
+
+/* for Project Overview */
+.about-tabs-menu a {
+    min-height: 60px;         /* Adjust this value as needed */
+    display: flex;
+    align-items: center;      /* Vertically center the icon and text */
+    padding-top: 12px;        /* Optional: add more space above */
+    padding-bottom: 12px;     /* Optional: add more space below */
+}
+
+/* for refer family  */
+
+
+/* Make the call-to-action box more compact */
+.call-to-action-v2 {
+    padding: 20px 20px 20px 70px !important;
+    max-width: 100%;
+}
+
+.call-to-action-v2 .call-back-content {
+    padding: 0 !important;
+}
+
+.call-to-action-v2 h3 {
+    margin-bottom: 24px !important;
+    font-size: 18px !important;
+    margin-top: 1px;
+    margin-left: 37px;
+}
+
+.call-to-action-v2 .form-group {
+    margin-bottom: 9px !important;
+}
+
+.call-to-action-v2 .call-back-inp {
+    height: 35px !important;
+    font-size: 14px !important;
+    padding: 2px 8px !important;
+}
+
+.call-to-action-v2 button.xs-btn {
+    padding: 2px 21px 1px 21px !important;
+    /* padding: 6px 18px !important; */
+    font-size: 16px !important;
+}
+.call-back-inp::placeholder {
+    color: #fff !important;
+    opacity: 1; /* Ensures full opacity in all browsers */
+}
+
+/* for footer section 9-7-25 */
+.footer-contact-list a:hover {
+    color: #07d307 !important;
+    text-decoration: none !important;
+}
+.service-link li:hover{
+    color: #07d307 !important;
+}
+
+.service-link li a:hover {
+    text-decoration: none !important;
+}
+
+a.no-underline-hover:hover {
+    text-decoration: none;
+}
+
+/* Prevent underline on footer-bottom-menu links */
+.footer-bottom-menu li a:hover {
+    text-decoration: none !important;
+}
+
+.footer-bottom-menu li a {
+    text-decoration: none;
+}
+
+/* Floating WhatsApp Icon */
+.grid-container {
+    position: fixed;
+    bottom: 20px; /* Distance from bottom */
+    right: 20px;   /* Align to the left side */
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  @keyframes blink-zoom {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+    }
+  }
+  
+  /* WhatsApp Chat Popup */
+  .floating-wap-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px; /* ensures it's on the right */
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    font-family: 'Segoe UI', sans-serif;
+    z-index: 1000;
+    max-width: 90vw; /* Prevent overflow on mobile */
+  }
+  
+  /* Header */
+  .floating-wpp-head {
+    background-color: #128C7E;
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  /* Close Button */
+  .floating-wpp-head .close {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .floating-wpp-head .close:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Message */
+  .floating-wpp-message {
+    padding: 16px;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Input Area */
+  .floating-wpp-input-message {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  /* Textarea */
+  .floating-wpp-input-message textarea {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 14px;
+    outline: none;
+    min-height: 36px;
+  }
+  
+  /* Send Button */
+  .floating-wpp-btn-send {
+    margin-left: 10px;
+    background-color: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .floating-wpp-btn-send:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+  }
+  
+  .floating-wpp-btn-send img {
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .floating-wap-popup {
+      right: 10px;
+      left: 10px;
+      width: auto;
+      max-width: calc(100vw - 20px);
+    }
+    
+    .grid-container {
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+  /* angle up icon */
+#scrollUp {
+    background-color: #00aa4f;
+    border-radius: 50%;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 22px;
+    height: 40px;
+    line-height: 44px;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+     /* top: 290px; */
+     left: 20px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
+    box-shadow: 0px 5px 15px 0px rgba(1, 29, 80, 0.1);
+    font-weight: 400;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    display: none; /* Hidden by default */
+}
+
+.angle_up {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2147483647;
+    display: block;
+}
+
+/* 11-07-25 */
+.call-to-action-v2 {
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.call-back-content h3 {
+    margin-top: 0;
+    padding-top: 10px; /* or as needed */
+}
+
+/* for gaq 14-07-25 */
+.intro_cards_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  gap: 15px;
+  justify-content: center;
+}
+
+.intro_card_container {
+  flex: 0 0 250px; /* or any fixed width you want */
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .intro_cards_container {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+    .intro_card_container {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+.intro_card_container {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    max-width: 18% !important;
+    box-sizing: border-box !important;
+}
+
+.intro_card_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* for nav bar contact number 21-07-2025 */
+#contact-numbers a,
+#contact-numbers a:hover,
+#contact-numbers a:focus,
+#contact-numbers a:active {
+    text-decoration: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background: #00aa4f;
+}
+
+/* for greenx faq part */
+.greenx-logo{
+height: 90px !important;
+    width: 90px !important;
+    position: absolute;
+    top: -4px;
+    margin: 0 !important;
+    padding: 10px;
+    display: flex;
+    left: 28%;
+  }
+
+  /* for footer twitter */
+  .twitter {
+    transition: filter 0.3s ease;
+
+  }
+  
+  .twitter:hover {
+    filter: brightness(0) saturate(100%) invert(57%) sepia(95%) saturate(681%) hue-rotate(64deg) brightness(104%) contrast(105%);
+    color: #07d307;
+    margin-top: -2px;
+
+  }
+  a:hover .twitter {
+    color: #07d307;
+  }
+
+  /* Nav bar mobile response for that */
+  /* Basic mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-menus-wrapper {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    display: flex;
+  }
+}
+
+
+/* ===== Footer Responsive CSS ===== */
+@media (max-width: 768px) {
+  .footer-item .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-item .col-lg-3,
+  .footer-item .col-md-2,
+  .footer-item .col-md-3 {
+    width: 100% !important;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-social {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .footer-social li {
+    margin: 0 8px;
+  }
+
+  .footer-contact-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .footer-contact-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .copyright-content .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .copyright-content .col-md-4 {
+    width: 100% !important;
+  }
+
+  .padding-top-36 {
+    padding-top: 10px !important;
+  }
+
+  .footer-bottom-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-bottom-menu li {
+    margin: 0 5px;
+  }
+
+  .xs-back-to-top {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .xs-dcm img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  .footer-social img.twitter {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+  }
+}
+
+/* ===== Mobile Social Icons Responsive Styling ===== */
+.socialIconsMobile {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.socialIconsBlock .container {
+  padding: 0;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between; /* or space-evenly */
+  align-items: center;
+  gap: 8px; /* reduce space between icons */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flexBox li {
+  display: inline-block;
+}
+
+.flexBox li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.flexBox li a:hover {
+  transform: scale(1.05);
+}
+
+.flexBox img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 768px) {
+  .__call__to__action__container {
+      visibility: visible !important;
+      min-height: 75px !important;
+      min-width: 100% !important;
+      height: 75px !important;
+      width: 100% !important;
+  }
+}
+
+.__call__to__action__container {
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999999;
+  background: rgb(0, 0, 0, 0.7);
+  /* background: black; */
+  display: flex !important
+;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -10px 50px 0 rgba(0, 0, 0, 0.23);
+  border-radius: 20px 20px 0 0;
+  height: 0px;
+  width: 0%;
+  padding: 0 15px;
+}
+
+/* no mobile response for the whats app icon and scroll up */
+@media (max-width: 768px) {
+  #whatsappPopup,
+  .grid-container,
+  .angle_up {
+    display: none !important;
+  }
+}
+
+
+/* blog page card purpose */
+.blog-main {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Make UL a responsive flex layout */
+.blog-main ul.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each card-style LI */
+.blog-main li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  height: 92px;
+}
+
+.blog-main li:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling inside card */
+.blog-main img.image-250px {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* Title inside the card */
+.blog-main h3.image-bl-header {
+  font-size: 20px;
+  margin: 15px 10px 5px;
+  color: #2d472c;
+}
+
+/* Description in the card */
+.blog-main h4.font-small {
+  font-size: 14px;
+  margin: 0 10px 15px;
+  color: #555;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Remove unnecessary padding/margin in form and recent articles */
+.card {
+  margin-top: 30px;
+}
+
+.rupees{
+  height: 2px;
+  width: 2px;
+}
+
+/* 30-07-25 for awards and recognazation */
+.d-block {
+  display: block !important;
+}
+
+.VAGRBD_HEADING {
+  font-size: 30px !important;
+  font-family: VAGRoundedBold !important;
+  color: black !important;
+  font-weight: 700 !important;
+  margin-top: -28px;
+  margin-top: -2px;
+  /* font-family: poppins, sans-serif; */
+}
+
+.__divider__300 {
+  border-bottom: 2px solid #aecb06;
+  margin: auto;
+  width: 200px;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.carousel-control-prev-icon {
+  background-image: url('../images/about-us/previous.png');
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-next-icon {
+  background-image: url('../images/about-us/next.png');
+  width: 30px;
+  height: 30px;
+}
+
+/* Awards Slider */
+
+.awards-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.awards-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.award-slide {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+
+.award-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.award-slide.previous {
+  transform: translateX(-100%);
+}
+
+.award-slide.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.awards-slider .slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.awards-slider .slide-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.awards-slider .prev-arrow {
+  left: 10px;
+}
+
+.awards-slider .next-arrow {
+  right: 10px;
+}
+
+/* Add these styles to your carousel.css */
+
+/* Container styling */
+#outstandingAchievement {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust based on your needs */
+  margin: 0 auto;
+  /* Enable hardware acceleration */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+/* Carousel item base styles */
+.carousel-item {
+  display: none;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+}
+
+/* Image styling */
+.farms-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 500px; /* Adjust this value based on your needs */
+  /* Prevent image flickering */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Active state */
+.carousel-item.active {
+  display: block;
+  transform: translateX(0);
+}
+
+/* Transition states */
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+/* Smooth transition for all transform changes */
+.carousel-item,
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optional: Improve button visibility */
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.8;
+  transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev,
+        .carousel-control-next {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        .carousel-control-prev:focus,
+        .carousel-control-next:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        
+        /* Ensure carousel controls are visible */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        
+        /* Make carousel responsive */
+        .carousel {
+            max-width: 100%;
+            overflow: hidden;
+        }
+        
+        .carou-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+  .faq-accordian-logo{
+    left: 28% !important;
+    top: -11px !important
+  }    
+
+  .awards{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+  }
+
+  /* mobile response for the nav bar */
+  /* mobile response for footer */
+  @media (max-width: 767.98px) {
+  .footer-mobile-wrapper {
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    background: #212529;
+}
+
+.footer-card {
+    background: #212529;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Logo image */
+.footer-logo img {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-social li i {
+    font-size: 16px;
+   
+}
+
+/* Two Column Card */
+.two-column-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    width: 50%;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Contact Info */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-contact i {
+    margin-right: 6px;
+    color: #000;
+}
+
+.twitter {
+    vertical-align: middle;
+}
+  }
+  
+  /* -8-8-2025 */
+  /* Hide mobile footer on desktops/tablets */
+.footer-mobile-wrapper {
+  display: none;
+}
+
+/* Show mobile footer only on small screens */
+@media screen and (max-width: 768px) {
+  /* Hide desktop footer content */
+  .footer-item
+   {
+      display: none;
+  }
+
+  /* Show mobile footer */
+  .footer-mobile-wrapper {
+    display: block;
+    background: black;
+  }
+}
+
+
+
+
+

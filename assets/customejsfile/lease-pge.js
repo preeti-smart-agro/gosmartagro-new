@@ -1,0 +1,122 @@
+
+function playVideo(_rul) {
+    var domElement = document.getElementById('v-player');
+    if (domElement.classList.contains('iframe-in-visible')) {
+        domElement.classList.remove('iframe-in-visible')
+    }
+    domElement = document.getElementById('iframe-video');
+    domElement.setAttribute("src ", _rul)
+}
+
+document.getElementById("v-player").addEventListener("click ", function () {
+    var domElement = document.getElementById('v-player');
+    if (!domElement.classList.contains('iframe-in-visible')) {
+        domElement.classList.add('iframe-in-visible')
+    }
+    domElement = document.getElementById('iframe-video');
+    domElement.removeAttribute("src ")
+});
+
+
+function captureCustomerInfo() {
+    var isCustomerInfoCapture = localStorage.getItem("captureCustomerInfo");
+    if (isCustomerInfoCapture === null) {
+        isCustomerInfoCapture = sessionStorage.getItem("captureCustomerInfo");
+    }
+
+    if (isCustomerInfoCapture !== null) {
+        if (isCustomerInfoCapture === "false") {
+            document.getElementById('pop-up-blk').classList.add('in-visible');
+            document.getElementById('id-customer-info').classList.remove('in-visible');
+            try {
+                document.getElementById('cust-info-section').classList.remove('in-visible');
+            } catch (err) { }
+            window.scroll({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            window.open("./assets/brochure/Project_Brochure.pdf");
+            localStorage.setItem("captureCustomerInfo", true);
+            sessionStorage.setItem("captureCustomerInfo", true);
+        }
+    }
+}
+
+
+function openPopUp() {
+    var domElement = document.getElementById('init-pop-up');
+    var popContent = document.getElementById('pop-content');
+    popContent.classList.add('popup-animate');
+    domElement.classList.remove('in-visible');
+    document.getElementById('pop-up-blk').classList.add('in-visible');
+    document.getElementById('btn-close').classList.remove('in-visibile');
+}
+
+function closePopUp(elementId) {
+    var domElement = document.getElementById('init-pop-up');
+    var popContent = document.getElementById('pop-content');
+    popContent.classList.remove('popup-animate');
+    domElement.classList.add('in-visible');
+    document.getElementById('pop-up-blk').classList.remove('in-visible');
+    document.getElementById('btn-close').classList.add('in-visibile');
+}
+
+function closecustinfo() {
+    document.getElementById('cust-info-section').classList.add('in-visible');
+    document.getElementById('pop-up-blk').classList.remove('in-visible');
+}
+
+function openCustomerInfo() {
+    var elementId = document.getElementById("customer-info");
+    elementId.classList.remove("in-visible");
+}
+
+function closecustomerinfo() {
+    var elementId = document.getElementById('customer-info')
+    elementId.classList.add('in-visible');
+    //document.getElementById('pop-up-blk').classList.remove('in-visible');
+}
+
+function showIcons() {
+    var domElement = document.getElementById('social-icons');
+    domElement.classList.remove('active');
+    var domElement1 = document.getElementById('social-icons-1');
+    domElement1.classList.add('active');
+    var domElement2 = document.getElementById('social-icons-2');
+    domElement2.classList.add('active');
+}
+
+
+
+function showInvestReturn() {
+    var x = document.getElementById("invest-id").value;
+    var x2 = document.getElementById("invest-no").value;
+    if (x == "Select" && x2 == "Select") {
+        document.getElementById("return-invest").classList.add("in-visible");
+    } else {
+        document.getElementById("return-invest").classList.remove("in-visible");
+    }
+}
+
+function closeIcons() {
+    var domElement = document.getElementById('social-icons');
+    domElement.classList.add('active');
+    var domElement1 = document.getElementById('social-icons-1');
+    domElement1.classList.remove('active');
+    var domElement2 = document.getElementById('social-icons-2');
+    domElement2.classList.remove('active');
+}
+
+function showNumber() {
+    var domNumber = document.getElementById('mobile-no');
+    domNumber.classList.remove('invisible')
+    document.getElementById('caller-icon').click();
+    // domNumber.classList.add('visible')
+
+}
+
+function closeNumber() {
+    var domNumber = document.getElementById('mobile-no');
+    domNumber.classList.add('invisible')
+}

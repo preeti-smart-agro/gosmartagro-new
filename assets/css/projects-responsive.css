@@ -1,0 +1,323 @@
+/* css*/
+
+@media(min-width:300px) and (max-width:362px) {
+    #p-content,
+    #p-call-back-content {
+        width: 360px !important;
+    }
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+}
+
+@media(min-width:383.9px) and (max-width:384.9px) and (max-height: 640.90px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    #socialiconsright {
+        padding: 0 !important;
+        flex-flow: row !important;
+        flex-direction: row !important;
+        width: max-content !important;
+        bottom: -3px !important;
+        margin: auto !important;
+        right: 0;
+        left: 0 !important;
+        position: absolute !important;
+        display: flex !important;
+        padding-left: 0px;
+    }
+    #pr-contactForm ul li,
+    #sr-contactForm ul li {
+        height: 70px !important;
+    }
+    .cust-info-section .content {
+        top: 0px !important;
+    }
+    #p-content {
+        height: 100% !important;
+        overflow: auto;
+        width: 383px !important;
+    }
+    #p-call-back-content {
+        width: 383px !important;
+        height: 100% !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content {
+        padding-left: 27px !important;
+        margin-bottom: 0px !important;
+        overflow-y: scroll;
+        margin-top: -7px;
+    }
+    .cust-info-section .content {
+        width: 100%;
+    }
+    #pr-contactForm>div {
+        margin-top: -21px;
+        margin-bottom: 41px;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content .x-button {
+        right: 10px !important
+    }
+}
+
+@media(min-width:359.9px) and (max-width:360.9px) and (max-height: 760.90px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    #socialiconsright {
+        padding: 0 !important;
+        flex-flow: row !important;
+        flex-direction: row !important;
+        width: max-content !important;
+        bottom: -3px !important;
+        margin: auto !important;
+        right: 0;
+        left: 0 !important;
+        position: absolute !important;
+        display: flex !important;
+        padding-left: 0px;
+    }
+    #pr-contactForm ul li,
+    #sr-contactForm ul li {
+        height: 70px !important;
+    }
+    .cust-info-section .content {
+        top: 0px !important;
+    }
+    #p-content {
+        height: 100% !important;
+        overflow: auto;
+        width: 360px !important;
+    }
+    #p-call-back-content {
+        width: 360px !important;
+        height: 100% !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content {
+        padding-left: 27px !important;
+        margin-bottom: 0px !important;
+        overflow-y: scroll;
+        margin-top: -7px;
+    }
+    .cust-info-section .content {
+        width: 100%;
+    }
+    #pr-contactForm>div {
+        margin-top: -21px;
+        margin-bottom: 41px;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content .x-button {
+        right: 10px !important
+    }
+}
+
+@media(min-width:410.9px) and (max-width:414px) and (max-height: 731.90px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    .cust-info-section .content {
+        top: 0px !important;
+    }
+    #p-content {
+        height: 100% !important;
+        overflow: auto;
+        width: 100% !important;
+    }
+    #p-call-back-content {
+        width: 410px !important;
+        height: 100% !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content {
+        padding-left: 27px !important;
+        margin-bottom: 0px !important;
+        overflow-y: scroll;
+        margin-top: -7px;
+    }
+    .cust-info-section .content {
+        width: 100%;
+    }
+    #pr-contactForm>div {
+        margin-top: -21px;
+        margin-bottom: 41px;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content .x-button {
+        right: 10px !important
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: auto !important;
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    #p-content,
+    #p-call-back-content {
+        min-width: 720px;
+        max-width: 920px;
+    }
+}
+
+
+/* I-pad responsive css */
+
+@media(min-width:767.8px) and (max-width:768px) and (max-height:1025px) {
+    .section-padding {
+        padding: 25px !important;
+    }
+    .about-sec.about-v2-sec .about-tabs-menu {
+        width: 200px !important;
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+    }
+    .about-sec.about-v2-sec .about-tabs-menu a {
+        width: 200px !important;
+    }
+    #termsconditions {
+        height: 400px;
+        width: 406px;
+        margin-bottom: 10px !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content .x-button {
+        right: 60px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 30px !important;
+        padding: 2px 0px 0px 13.2px !important;
+    }
+    .cust-info-section .content {
+        top: -130px;
+        height: 800px !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content {
+        height: 800px !important;
+    }
+    .key-benifits-item .key-benifits-content {
+        margin: 40px 0px 0px 0px !important;
+    }
+    .social-icons ul .social-icon-li {
+        padding: 2px 0 0 19px !important;
+    }
+    .social-icons>ul:last-child {
+        padding: 0 !important;
+        position: absolute !important;
+        right: unset !important;
+        float: left !important;
+    }
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+}
+
+@media(min-width:800px) and (max-width:823px) {}
+
+@media(min-width:992px) and (max-width:1200px) {}
+
+@media only screen and (min-width:1200px) {}
+
+
+/* Nexus 10 */
+
+@media(min-width:767.8px) and (max-width:800px) and (max-height:1280.9px) {
+    .section-padding {
+        padding: 25px !important;
+    }
+    .about-sec.about-v2-sec .about-tabs-menu {
+        width: 200px !important;
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+    }
+    .about-sec.about-v2-sec .about-tabs-menu a {
+        width: 200px !important;
+    }
+    #termsconditions {
+        height: 400px;
+        width: 406px;
+        margin-bottom: 10px !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content .x-button {
+        right: 60px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 30px !important;
+        padding: 2px 0px 0px 13.2px !important;
+    }
+    .cust-info-section .content {
+        top: -130px;
+        height: 800px !important;
+    }
+    .cust-info-section .content .testmonial-sec .call-back-content {
+        height: 800px !important;
+    }
+    .key-benifits-item .key-benifits-content {
+        margin: 40px 0px 0px 0px !important;
+    }
+    .social-icons ul .social-icon-li {
+        padding: 2px 0 0 19px !important;
+    }
+    .social-icons>ul:last-child {
+        padding: 0 !important;
+        position: absolute !important;
+        right: unset !important;
+        float: left !important;
+    }
+    .about-sec.about-v2-sec .about-tabs-item {
+        margin: 0 !important;
+    }
+    .location {
+        position: relative;
+        width: 920px !important;
+        height: 400px !important;
+        min-height: 400px !important;
+        max-height: 400px !important;
+    }
+}
+
+@media (max-width: 823px) and (min-width: 800px) {
+    .about-sec.about-v2-sec .about-tabs-menu {
+        display: grid !important;
+    }
+}

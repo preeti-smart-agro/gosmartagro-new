@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-Year Financial Projection - Sandalwood Farmland Investment</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #28a745;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #6c757d;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        
+        .projection-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .projection-table th {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .projection-table td {
+            padding: 18px 15px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .projection-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .projection-table tr:hover {
+            background-color: #e8f5e8;
+            transition: background-color 0.3s ease;
+        }
+        
+        .component-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+        
+        .value-cell {
+            font-weight: 600;
+            color: #28a745;
+            font-size: 1.1rem;
+        }
+        
+        .notes-cell {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .total-row {
+            background: linear-gradient(135deg, #e8f5e8, #d4edda) !important;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .total-row .component-name {
+            color: #155724;
+        }
+        
+        .total-row .value-cell {
+            color: #155724;
+            font-size: 1.3rem;
+        }
+        
+        .calculation-section {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 5px solid #28a745;
+        }
+        
+        .calculation-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .calculation-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .calculation-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #28a745;
+        }
+        
+        .calculation-label {
+            font-weight: 500;
+            color: #495057;
+        }
+        
+        .calculation-value {
+            font-weight: 600;
+            color: #28a745;
+        }
+        
+        .roi-section {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .roi-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .roi-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .roi-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .interactive-controls {
+            margin: 30px 0;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .btn {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #218838;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .projection-table {
+                font-size: 0.9rem;
+            }
+            
+            .projection-table th,
+            .projection-table td {
+                padding: 12px 8px;
+            }
+            
+            .calculation-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .calculation-value {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>15-Year Financial Projection</h1>
+            <div class="subtitle">1 Acre ₹40 Lakh Investment</div>
+        </div>
+        
+        <table class="projection-table">
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Annual / 15-Year Value</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="component-name">Intercrop Income</td>
+                    <td class="value-cell">₹1 lakh/year → ₹15 lakh</td>
+                    <td class="notes-cell">Recurring income</td>
+                </tr>
+                <tr>
+                    <td class="component-name">Land Appreciation</td>
+                    <td class="value-cell">₹40 lakh → ₹1.2 crore</td>
+                    <td class="notes-cell">8–12% annual growth</td>
+                </tr>
+                <tr>
+                    <td class="component-name">Sandalwood Harvest</td>
+                    <td class="value-cell">₹6–10 crore</td>
+                    <td class="notes-cell">40–60 mature trees per acre</td>
+                </tr>
+                <tr class="total-row">
+                    <td class="component-name">Total Value (15 Years)</td>
+                    <td class="value-cell">₹7.15–11.15 crore</td>
+                    <td class="notes-cell">Combined returns</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="calculation-section">
+            <h3>Detailed Calculation Breakdown</h3>
+            <div class="calculation-item">
+                <span class="calculation-label">Initial Investment:</span>
+                <span class="calculation-value">₹40,00,000</span>
+            </div>
+            <div class="calculation-item">
+                <span class="calculation-label">Intercrop Income (15 years @ ₹1 lakh/year):</span>
+                <span class="calculation-value">₹15,00,000</span>
+            </div>
+            <div class="calculation-item">
+                <span class="calculation-label">Land Appreciation (8-12% annually):</span>
+                <span class="calculation-value">₹80,00,000</span>
+            </div>
+            <div class="calculation-item">
+                <span class="calculation-label">Sandalwood Harvest (40-60 trees):</span>
+                <span class="calculation-value">₹6,00,00,000 - ₹10,00,00,000</span>
+            </div>
+            <div class="calculation-item">
+                <span class="calculation-label">Total Returns (15 Years):</span>
+                <span class="calculation-value">₹7,15,00,000 - ₹11,15,00,000</span>
+            </div>
+        </div>
+        
+        <div class="roi-section">
+            <h3>Return on Investment</h3>
+            <div class="roi-value">1,688% - 2,688%</div>
+            <div class="roi-description">Total ROI over 15 years</div>
+        </div>
+        
+        <div class="interactive-controls">
+            <h3>Interactive Calculator</h3>
+            <div class="form-group">
+                <label for="initialInvestment">Initial Investment (₹):</label>
+                <input type="number" id="initialInvestment" class="form-control" value="4000000" min="100000" step="100000">
+            </div>
+            <div class="form-group">
+                <label for="intercropIncome">Annual Intercrop Income (₹):</label>
+                <input type="number" id="intercropIncome" class="form-control" value="100000" min="50000" step="10000">
+            </div>
+            <div class="form-group">
+                <label for="landAppreciation">Land Appreciation Rate (%):</label>
+                <input type="number" id="landAppreciation" class="form-control" value="10" min="5" max="15" step="1">
+            </div>
+            <div class="form-group">
+                <label for="sandalwoodMin">Min Sandalwood Value (₹ crore):</label>
+                <input type="number" id="sandalwoodMin" class="form-control" value="6" min="3" max="15" step="1">
+            </div>
+            <div class="form-group">
+                <label for="sandalwoodMax">Max Sandalwood Value (₹ crore):</label>
+                <input type="number" id="sandalwoodMax" class="form-control" value="10" min="5" max="20" step="1">
+            </div>
+            <button class="btn" onclick="calculateProjection()">Calculate Projection</button>
+        </div>
+        
+        <div id="results" class="calculation-section" style="display: none;">
+            <h3>Updated Projection Results</h3>
+            <div id="calculationResults"></div>
+        </div>
+    </div>
+
+    <script>
+        function calculateProjection() {
+            const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
+            const intercropIncome = parseFloat(document.getElementById('intercropIncome').value);
+            const landAppreciation = parseFloat(document.getElementById('landAppreciation').value) / 100;
+            const sandalwoodMin = parseFloat(document.getElementById('sandalwoodMin').value) * 10000000; // Convert to rupees
+            const sandalwoodMax = parseFloat(document.getElementById('sandalwoodMax').value) * 10000000; // Convert to rupees
+            
+            const years = 15;
+            
+            // Calculate intercrop income over 15 years
+            const totalIntercropIncome = intercropIncome * years;
+            
+            // Calculate land appreciation using compound interest
+            const landValue = initialInvestment * Math.pow(1 + landAppreciation, years);
+            const landAppreciationAmount = landValue - initialInvestment;
+            
+            // Calculate total returns
+            const totalMin = totalIntercropIncome + landAppreciationAmount + sandalwoodMin;
+            const totalMax = totalIntercropIncome + landAppreciationAmount + sandalwoodMax;
+            
+            // Calculate ROI
+            const roiMin = ((totalMin - initialInvestment) / initialInvestment) * 100;
+            const roiMax = ((totalMax - initialInvestment) / initialInvestment) * 100;
+            
+            // Format numbers for display
+            function formatCurrency(amount) {
+                if (amount >= 10000000) {
+                    return '₹' + (amount / 10000000).toFixed(2) + ' crore';
+                } else if (amount >= 100000) {
+                    return '₹' + (amount / 100000).toFixed(1) + ' lakh';
+                } else {
+                    return '₹' + amount.toLocaleString('en-IN');
+                }
+            }
+            
+            // Update the table
+            document.querySelector('tbody tr:nth-child(1) td:nth-child(2)').textContent = 
+                formatCurrency(intercropIncome) + '/year → ' + formatCurrency(totalIntercropIncome);
+            document.querySelector('tbody tr:nth-child(2) td:nth-child(2)').textContent = 
+                formatCurrency(initialInvestment) + ' → ' + formatCurrency(landValue);
+            document.querySelector('tbody tr:nth-child(3) td:nth-child(2)').textContent = 
+                formatCurrency(sandalwoodMin) + '–' + formatCurrency(sandalwoodMax);
+            document.querySelector('tbody tr:nth-child(4) td:nth-child(2)').textContent = 
+                formatCurrency(totalMin) + '–' + formatCurrency(totalMax);
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('calculationResults').innerHTML = `
+                <div class="calculation-item">
+                    <span class="calculation-label">Total ROI (Minimum):</span>
+                    <span class="calculation-value">${roiMin.toFixed(0)}%</span>
+                </div>
+                <div class="calculation-item">
+                    <span class="calculation-label">Total ROI (Maximum):</span>
+                    <span class="calculation-value">${roiMax.toFixed(0)}%</span>
+                </div>
+                <div class="calculation-item">
+                    <span class="calculation-label">Net Profit (Minimum):</span>
+                    <span class="calculation-value">${formatCurrency(totalMin - initialInvestment)}</span>
+                </div>
+                <div class="calculation-item">
+                    <span class="calculation-label">Net Profit (Maximum):</span>
+                    <span class="calculation-value">${formatCurrency(totalMax - initialInvestment)}</span>
+                </div>
+            `;
+        }
+        
+        // Initialize calculation on page load
+        window.onload = function() {
+            calculateProjection();
+        };
+    </script>
+</body>
+</html>

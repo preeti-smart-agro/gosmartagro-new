@@ -1,0 +1,19 @@
+.xs-banner-sec.banner-slider .owl-nav>div {
+    background: rgb(0 0 0/60%) !important;
+}
+
+.xs-banner-sec.banner-slider .owl-nav>div i {
+    font-weight: bold !important;
+}
+
+.owl-item.active .backgroundVideo {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1;
+}
+
+.owl-item .backgroundVideo {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}

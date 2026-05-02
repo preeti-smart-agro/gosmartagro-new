@@ -1,0 +1,48 @@
+data = '[{"name" : "John Doe", "age" : "25"},{"name" : "Jane Doe", "age" : "20"}]';
+// {
+//     "revenueModelPricing": {
+//         "headers": [
+//             "Farmland Sizes",
+//             "Quarter Acre",
+//             "Half Acre",
+//             "One Acre"
+//         ],
+//         "body": [{
+//                 "col1": "Farmland Price",
+//                 "col2": "6.5 Lakh",
+//                 "col3": "12.5 Lakh",
+//                 "col4": "25 Lakh"
+//             },
+//             {
+//                 "col1": "EMI",
+//                 "col2": "Rs 9,999",
+//                 "col3": "Rs 19,999",
+//                 "col4": "Rs 39,999"
+//             },
+//             {
+//                 "col1": "No of Melia Dubia Trees",
+//                 "col2": "35",
+//                 "col3": "75",
+//                 "col4": "150"
+//             },
+//             {
+//                 "col1": "Income from Melia Dubia after 10 years",
+//                 "col2": "Rs 11 Lakh",
+//                 "col3": "Rs 24  Lakh",
+//                 "col4": "Rs 48  Lakh"
+//             },
+//             {
+//                 "col1": "Annual Income from Cash Crops",
+//                 "col2": "Rs 25,000",
+//                 "col3": "Rs 50,000",
+//                 "col4": "Rs 1,00,000"
+//             },
+//             {
+//                 "col1": "Maintenance Fees for 10 years",
+//                 "col2": "NIL",
+//                 "col3": "NIL",
+//                 "col4": "NIL"
+//             }
+//         ]
+//     }
+// }

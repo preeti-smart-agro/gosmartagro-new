@@ -1,0 +1,141 @@
+
+function playVideo(_rul) {
+    var domElement = document.getElementById('v-player');
+    if (domElement.classList.contains('iframe-in-visible')) {
+        domElement.classList.remove('iframe-in-visible')
+    }
+    domElement = document.getElementById('iframe-video');
+    domElement.setAttribute("src", _rul);
+    var documentBody = document.getElementById('body')
+    documentBody.style.overflow = 'hidden';
+}
+
+document.getElementById("v-player").addEventListener("click", function () {
+    var domElement = document.getElementById('v-player');
+    if (!domElement.classList.contains('iframe-in-visible')) {
+        domElement.classList.add('iframe-in-visible')
+    }
+    domElement = document.getElementById('iframe-video');
+    domElement.removeAttribute("src");
+    var documentBody = document.getElementById('body')
+    documentBody.style.overflow = 'auto';
+});
+
+function openPopUp() {
+    var domElement = document.getElementById('init-pop-up');
+    var popContent = document.getElementById('pop-content');
+    popContent.classList.add('popup-animate');
+    domElement.classList.remove('in-visible');
+    document.getElementById('pop-up-blk').classList.add('in-visible');
+    document.getElementById('btn-close').classList.remove('in-visibile');
+}
+
+function closePopUp(elementId) {
+    var domElement = document.getElementById('init-pop-up');
+    var popContent = document.getElementById('pop-content');
+    popContent.classList.remove('popup-animate');
+    domElement.classList.add('in-visible');
+    document.getElementById('pop-up-blk').classList.remove('in-visible');
+    document.getElementById('btn-close').classList.add('in-visibile');
+}
+
+
+
+function openCustomerInfo() {
+    var elementId = document.getElementById("customer-info");
+    elementId.classList.remove("in-visible");
+}
+
+function closecustomerinfo() {
+    var elementId = document.getElementById('customer-info')
+    elementId.classList.add('in-visible');
+    //document.getElementById('pop-up-blk').classList.remove('in-visible');
+}
+
+function showIcons() {
+    var domElement = document.getElementById('social-icons');
+    domElement.classList.remove('active');
+    var domElement1 = document.getElementById('social-icons-1');
+    domElement1.classList.add('active');
+    var domElement2 = document.getElementById('social-icons-2');
+    domElement2.classList.add('active');
+}
+
+function closeIcons() {
+    var domElement = document.getElementById('social-icons');
+    domElement.classList.add('active');
+    var domElement1 = document.getElementById('social-icons-1');
+    domElement1.classList.remove('active');
+    var domElement2 = document.getElementById('social-icons-2');
+    domElement2.classList.remove('active');
+}
+
+function showNumber() {
+    var domNumber = document.getElementById('mobile-no');
+    domNumber.classList.remove('invisible')
+    document.getElementById('caller-icon').click();
+    // domNumber.classList.add('visible')
+
+}
+
+function closeNumber() {
+    var domNumber = document.getElementById('mobile-no');
+    domNumber.classList.add('invisible')
+}
+
+function viewMore() {
+    var viewmoreElement = document.getElementById('viewmore');
+    if (viewmoreElement.classList.contains('invisible')) {
+        viewmoreElement.classList.remove('invisible');
+        viewmoreElement.classList.add('visible');
+        document.getElementById('collapse').classList.remove('invisible');
+        document.getElementById('collapse').classList.add('visible');
+        document.getElementById('expand').classList.add('invisible');
+    } else {
+        viewmoreElement.classList.add('visible');
+        document.getElementById('collapse').classList.remove('invisible');
+        document.getElementById('collapse').classList.add('visible');
+        document.getElementById('expand').classList.add('invisible');
+    }
+}
+
+function viewLess() {
+    var viewmoreElement = document.getElementById('viewmore');
+    if (viewmoreElement.classList.contains('visible')) {
+        viewmoreElement.classList.remove('visible');
+        viewmoreElement.classList.add('invisible');
+        document.getElementById('collapse').classList.add('invisible');
+        document.getElementById('expand').classList.remove('invisible');
+        document.getElementById('expand').classList.add('visible');
+    } else {
+        viewmoreElement.classList.add('invisible');
+        document.getElementById('collapse').classList.add('invisible');
+        document.getElementById('expand').classList.remove('invisible');
+        document.getElementById('expand').classList.add('visible');
+    }
+}
+
+
+function collapseAll(event, btnid, collapseId) {
+    var elementid = '';
+    for (let index = 0; index < 5; index++) {
+        if (event.target.id === (btnid + index)) {
+            elementid = collapseId + index;
+        } else {
+            var domElement = document.getElementById(btnid + index);
+            if (!domElement.classList.contains('collapsed')) {
+                domElement.classList.add('collapsed');
+            }
+            var val = domElement.getAttribute('aria-expanded');
+            if (val === 'true' || val === true) {
+                domElement.setAttribute('aria-expanded', false);
+            }
+
+            domElement = document.getElementById(collapseId + index);
+            if (domElement.classList.contains('show')) {
+                domElement.classList.remove('show');
+            }
+        }
+    }
+}
+
